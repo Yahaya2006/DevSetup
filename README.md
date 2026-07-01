@@ -14,3 +14,5 @@ Mon premier environnement de développement configuré de A à Z.
 ## Comment utiliser ce repo
 1. Cloner le repo : `git clone <url>`
 2. Ouvrir avec VSCode : `code .`
+## Prochaines étapes
+- Explorer d'autres outils de développement
