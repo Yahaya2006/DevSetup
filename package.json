@@ -1,0 +1,26 @@
+{
+  "name": "devsetup",
+  "version": "1.0.0",
+  "description": "Mon premier environnement de développement configuré de A à Z.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yahaya2006/DevSetup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Yahaya2006/DevSetup/issues"
+  },
+  "homepage": "https://github.com/Yahaya2006/DevSetup#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
