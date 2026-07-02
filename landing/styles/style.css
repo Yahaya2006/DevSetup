@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --couleur-secondaire: rgba(124, 119, 123, 0.775);
+    --couleur-test: #ad3f7a;
+    ----couleur-texte: #f8f9fa;
+}
+body{
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.95) ;
+    position: sticky;
+    padding: 30px;
+}
+header h2 {
+    color: var(--couleur-test);
+}
+
+.essayer{
+    background-color: var(--couleur-test);
+    color: var(----couleur-texte);
+    border-radius: 8px;
+    padding: 12px 24px;
+    border: none;
+}
+.essayer:hover{
+    background-color: #8a3261;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.tester{
+    background-color: var(----couleur-texte);
+    color: var(----couleur-secondaire);
+    border-radius: 8px;
+    padding: 12px 24px;
+    border: 2px solid var(--couleur-test);
+}
+.tester:hover{
+     background-color: var(--couleur-test);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.buttons{
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+}
+.intro{
+    padding: 30px;
+}

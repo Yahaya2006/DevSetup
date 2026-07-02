@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --couleur-secondaire: rgba(124, 119, 123, 0.775);
+    --couleur-test: #ad3f7a;
+    ----couleur-texte: #f8f9fa;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--couleur-complementaire);
+    color: var(----couleur-texte);
+}
+#header-principal{
+    background-color: var(--couleur-test);
+    color: var(----couleur-texte);
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    padding: 40px 24px;
+}
+#header-principal p {
+    margin-top: 8px;
+    color: black;
+}
+
+.section-carte {
+    background-color: var(--couleur-secondaire);
+    border: 4px double var(--couleur-test);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo-profil {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 4px solid var(--couleur-accent);
+    object-fit: cover;
+}
+button {
+    background-color: var(--couleur-principale);
+    color: #ffffff;
+    border: 1px solid var(--couleur-test);
+    padding: 8px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--couleur-test);
+    color: var(--couleur-texte);
+}
+
+a {
+    color: var(--couleur-principale);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover,
+a:focus {
+    color: var(--couleur-test);
+    text-decoration: underline;
+}
+main section h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--couleur-principale);
+    border-bottom: 2px solid var(--couleur-test);
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+#formulaire-contact label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+#formulaire-contact input[type="text"],
+#formulaire-contact input[type="email"],
+#formulaire-contact textarea {
+    width: 100%;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    border: 1px solid var(--couleur-bordure);
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#formulaire-contact input:focus,
+#formulaire-contact textarea:focus {
+    outline: none;
+    border-color: var(--couleur-principale);
+}
+footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--couleur-test);
+    font-size: 0.9rem;
+}
