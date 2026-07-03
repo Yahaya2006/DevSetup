@@ -7,7 +7,7 @@
 :root{
     --couleur-secondaire: rgba(124, 119, 123, 0.775);
     --couleur-test: #ad3f7a;
-    ----couleur-texte: #f8f9fa;
+    --couleur-texte: #f8f9fa;
 }
 body{
     background-color: white;
@@ -27,7 +27,7 @@ header h2 {
 
 .essayer{
     background-color: var(--couleur-test);
-    color: var(----couleur-texte);
+    color: var(--couleur-texte);
     border-radius: 8px;
     padding: 12px 24px;
     border: none;
@@ -36,9 +36,10 @@ header h2 {
     background-color: #8a3261;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
 .tester{
-    background-color: var(----couleur-texte);
-    color: var(----couleur-secondaire);
+    background-color: var(--couleur-texte);
+    color: var(--couleur-secondaire);
     border-radius: 8px;
     padding: 12px 24px;
     border: 2px solid var(--couleur-test);
