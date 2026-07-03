@@ -7,16 +7,16 @@
 :root{
     --couleur-secondaire: rgba(124, 119, 123, 0.775);
     --couleur-test: #ad3f7a;
-    ----couleur-texte: #f8f9fa;
+    --couleur-texte: #f8f9fa;
 }
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: var(--couleur-complementaire);
-    color: var(----couleur-texte);
+    color: var(--couleur-texte);
 }
 #header-principal{
     background-color: var(--couleur-test);
-    color: var(----couleur-texte);
+    color: var(--couleur-texte);
     text-align: center;
     border-radius: 8px;
     margin-bottom: 32px;
