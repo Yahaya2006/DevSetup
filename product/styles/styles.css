@@ -143,11 +143,10 @@ header p {
     border: 1px solid var(--couleur-texte);
 
 }
-.nom-produit
+
 
 footer {
     text-align: center;
     padding: 24px;
     color: var(--couleur-primaire);
-    font-size: 0.9rem;
 }
