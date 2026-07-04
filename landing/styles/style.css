@@ -1,248 +1,361 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-:root{
-    --couleur-secondaire: rgba(124, 119, 123, 0.775);
-    --couleur-test: #ad3f7a;
-    --couleur-texte: #f8f9fa;
+:root {
+    --couleur-principale: #7c3aed;
+    --couleur-secondaire: #c026d3;
+    --couleur-accent: #ec4899;
+    --couleur-texte: #111827;
+    --couleur-texte-clair: #f9fafb;
+    --fond-clair: #f8f5ff;
+    --fond-card: #ffffff;
+    --bordure: #e5e7eb;
+    --ombre: 0 20px 45px rgba(17, 24, 39, 0.08);
 }
-body{
-    background-color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+body {
+    background: linear-gradient(135deg, #fdfbff 0%, #f9f5ff 45%, #fff7fb 100%);
+    color: var(--couleur-texte);
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.95) ;
+
+header {
     position: sticky;
     top: 0;
-    padding: 30px;
-}
-header h2 {
-    color: var(--couleur-test);
-}
-
-.essayer{
-    background-color: var(--couleur-test);
-    color: var(--couleur-texte);
-    border-radius: 8px;
-    padding: 12px 24px;
-    border: none;
-}
-.essayer:hover{
-    background-color: #8a3261;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.tester{
-    background-color: var(--couleur-texte);
-    color: var(--couleur-secondaire);
-    border-radius: 8px;
-    padding: 12px 24px;
-    border: 2px solid var(--couleur-test);
-}
-.tester:hover{
-     background-color: var(--couleur-test);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-.buttons{
+    z-index: 10;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    max-width: 1180px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+header h2 {
+    color: var(--couleur-principale);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+button {
+    cursor: pointer;
+    font: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.essayer {
+    background: var(--couleur-accent);
+    color: var(--couleur-texte-clair);
+    border: 1px solid var(--couleur-accent);
+    border-radius: 8px;
+    padding: 12px 24px;
+    box-shadow: 0 8px 20px rgba(236, 72, 153, 0.18);
+}
+
+.tester,
+.inscription {
+    background: var(--fond-card);
+    color: var(--couleur-principale);
+    border: 2px solid var(--couleur-accent);
+    border-radius: 8px;
+    padding: 12px 24px;
+}
+
+.tester:hover,
+.inscription:hover {
+    background: var(--couleur-accent);
+    color: white;
+    box-shadow: 0 8px 20px rgba(17, 24, 39, 0.06);
+}
+
+main {
+    padding: 0 16px 40px;
+}
+
+.section {
+    max-width: 1180px;
+    margin: 24px auto;
+    padding: 32px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: var(--ombre);
+    border: 1px solid var(--couleur-accent);
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
     gap: 30px;
-    margin-top: 20px;
+    align-items: center;
+    padding: 40px 36px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 245, 255, 0.95));
+    border: 1px solid var(--couleur-accent);
+    border-radius: 16px;
 }
-.intro{
-    padding: 30px;
-    border: 1px solid var(--couleur-test);
-    margin: 15px;
-    border-radius: 8px;
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
-.presentation{
-    padding: 30px;
-    border: 1px solid var(--couleur-test);
-    margin: 15px;
-    border-radius: 8px;
+
+.presentation h1 {
+    font-size: clamp(2rem, 4.2vw, 3.2rem);
+    line-height: 1.15;
+    color: #0f172a;
 }
-.presentation h1{
-    margin-bottom: 20px;
-    font-size: 50px;
+
+.presentation p {
+    color: #4b5563;
+    max-width: 620px;
+    font-size: 1.02rem;
 }
-.img-hero{
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 8px;
+}
+
+.img-hero {
     display: flex;
     justify-content: center;
 }
 
-/* section des commentaires */
-
-.commentaires{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-}
-.comment-carte{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(201, 195, 195);
-    border-radius: 15px;
-    padding: 12px;
-}
-.noma{
-    display: flex;
-    justify-content: left;
-}
-.noma img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 10px;
-}
-.noma div {
-    margin-top: 10px;
-}
-.comment{
-    padding: 30px;
-    border: 1px solid var(--couleur-test);
-    margin: 15px;
-    border-radius: 8px;
-
-}
-.comment h1{
-    text-align: center;
-    margin-bottom: 25px;
+.img-hero img {
+    width: min(100%, 360px);
+    height: auto;
+    border-radius: 24px;
+    box-shadow: 0 18px 40px rgba(124, 58, 237, 0.18);
 }
 
-/* section des fonctionnalites */
-.fonction{
-    background-color: rgba(233, 226, 226, 0.812);
+.fonction {
     text-align: center;
 }
-.icone{
-    border-radius: 50%;
-    background-color: var(--couleur-test);
-    width: 40px;
-    height: 40px;
 
-
+.fonction > div:first-child h1,
+.comment > div:first-child h1,
+.tarif > div:first-child h1 {
+    font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+    margin-bottom: 8px;
 }
-.fonction-carte{
+
+.fonction > div:first-child p,
+.comment > div:first-child p,
+.tarif > div:first-child p {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.fonc-div {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.fonction-carte {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--couleur-secondaire);
-    border: 1px double var(--couleur-test);
+    gap: 12px;
+    background: linear-gradient(135deg, #ffffff, #f9f5ff);
+    border: 1px solid var(--bordure);
     border-radius: 18px;
-    padding: 12px;
-
+    padding: 24px 18px;
+    text-align: center;
 }
-.fonc-div{
+
+.icone {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--couleur-principale), var(--couleur-accent));
+    color: white;
+    font-weight: 700;
+}
+
+.commentaires {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.comment-carte {
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    padding: 15px;
-
+    justify-content: space-between;
+    gap: 20px;
+    background: linear-gradient(135deg, #ffffff, #fcf7ff);
+    border: 1px solid var(--bordure);
+    border-radius: 18px;
+    padding: 20px;
 }
 
-/* section tarif */
+.comment-carte > p {
+    color: #374151;
+    font-style: italic;
+}
+
+.noma {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.noma img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.noma h3 {
+    color: #111827;
+    font-size: 1rem;
+}
+
+.noma p {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
 
 .tarif {
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--couleur-test);
-    border-radius: 12px;
-    margin: 12px;
-    padding: 15px;
-
-}
-.tarif,h1, p {
-    text-align: center;
+    gap: 16px;
 }
 
-.tarif-carte{
-    border: 4px double var(--couleur-test);
-    text-align: center;
-    width: 400px;
-    height: 400px;
-    border-radius: 15px;
-    margin-top: 15px;
+.promo {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.tarif-carte {
     display: flex;
     flex-direction: column;
-    gap:15px;
+    gap: 16px;
+    border: 1px solid var(--bordure);
+    border-radius: 20px;
+    padding: 24px 20px;
+    background: var(--fond-card);
+    min-height: 360px;
 }
-.promo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
 
+.tarif-carte h2,
+.tarif-carte h4,
+.tarif-carte h5 {
+    color: #111827;
 }
-.btn-cont{
-   margin-top: 130px;
+
+.tarif-carte h3,
+.tarif-carte h4 {
+    font-size: 1.35rem;
 }
-.table{
-    border-bottom: 2px solid black;
-    text-align: left;
-    padding: 10px;
 
+.table {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 10px 0;
+    color: #374151;
 }
-.special {background-color: var(--couleur-secondaire);
-color: white;}
 
-/* section d'invitation */
+.btn-cont {
+    margin-top: auto;
+}
 
-.pret{
+.special {
+    background: linear-gradient(135deg, var(--couleur-principale), var(--couleur-accent));
+    color: var(--couleur-texte-clair);
+    border: none;
+    box-shadow: 0 16px 35px rgba(124, 58, 237, 0.2);
+}
+
+.special h2,
+.special h4,
+.special h5,
+.special .table {
+    color: var(--couleur-texte-clair);
+}
+
+.pret {
     text-align: center;
-    display: block;
-    padding: 50px;
-    background-color: var(--couleur-test);
-    color: white;
-}
-.inscription{
-    margin: 20px;
-    padding: 12px 24px;
-    border-radius: 12px;
-    color: rgb(111, 87, 103);
-}
-.inscription:hover{
-    border: 2px solid white;
-    background-color: #682b4c;
-    color: white;
+    background: linear-gradient(135deg, var(--couleur-principale), var(--couleur-accent));
+    color: var(--couleur-texte-clair);
+    padding: 44px 24px;
 }
 
-/* pied de la page  */
-
-footer{
-    color: var(--couleur-test);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
-    margin: 20px;
+.pret h1 {
+    font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+    margin-bottom: 10px;
 }
 
-/* responsive */
-@media (min-width: 900px) {
-    .intro {
-        display: flex;
-        flex-direction: row;
+.pret p {
+    opacity: 0.9;
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 24px 16px 36px;
+    color: #7c3aed;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
     }
 
-    .grille-fonctionnalites,
-    .grille-testimonials,
-    .grille-pricing {
+    .intro {
         grid-template-columns: 1fr;
     }
 
-    .fonc-div {
-       flex-direction: row;
+    .fonc-div,
+    .commentaires,
+    .promo {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    main {
+        padding: 0 12px 20px;
     }
 
-    .commentaires {
-        flex-direction: row;
+    .section {
+        padding: 22px 18px;
+        margin: 16px auto;
     }
 
-    .promo{
-        flex-direction: row;
+    .intro {
+        padding: 24px 18px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button,
+    .inscription {
+        width: 100%;
+    }
+
+    .tarif-carte {
+        min-height: auto;
+    }
+
+    .pret {
+        padding: 32px 16px;
     }
 }
