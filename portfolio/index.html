@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Alex Martin, développeur web full-stack basé à Brazzaville.">
+    <title>Alex Martin — Portfolio Développeur Web</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <a href="#contenu-principal" class="lien-evitement">Aller au contenu principal</a>
+
+    <header class="entete">
+        <nav class="nav-conteneur">
+            <a href="#accueil" class="logo">Aminata<span>.</span></a>
+
+            <ul class="nav-liens">
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenu-principal">
+
+        <section id="accueil" class="hero">
+            <img src="images/image.jpg" alt="Photo de profil d'Aminata" class="hero-photo">
+            <h1>Aminata Yahaya</h1>
+            <p class="hero-soustitre">Développeur Web Full-Stack — Brazzaville, Congo</p>
+            <p class="hero-texte">Je conçois des interfaces claires et des applications performantes, du prototype au déploiement.</p>
+            <div class="hero-boutons">
+                <a href="#projets" class="btn btn-principal">Voir mes projets</a>
+                <a href="#contact" class="btn btn-secondaire">Me contacter</a>
+            </div>
+        </section>
+
+        <section id="a-propos" class="a-propos">
+            <h2>À propos de moi</h2>
+            <div class="a-propos-grille">
+                <div>
+                    <p>Je m'appelle Aminata Yahaya, développeuse web basé à Brazzaville. Après une formation intensive en développement web, j'ai choisi de me spécialiser dans la création d'interfaces accessibles et de tableaux de bord orientés données.</p>
+                    <p>Mon parcours m'a mené du HTML/CSS pur aux frameworks JavaScript modernes, en passant par la gestion de projet avec Git. Je m'intéresse particulièrement à l'accessibilité web et à la performance.</p>
+                </div>
+                <ul class="parcours-liste">
+                    <li><strong>2024</strong> — Formation intensive Développeur Web</li>
+                    <li><strong>2023</strong> — Licence en Informatique</li>
+                    <li><strong>2022</strong> — Premiers projets freelance</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="competences" class="competences">
+            <h2>Compétences</h2>
+            <div class="grille-competences">
+
+                <div class="competence">
+                    <div class="competence-entete">
+                        <span>HTML5</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="barre-fond">
+                        <div class="barre-remplie" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="competence">
+                    <div class="competence-entete">
+                        <span>CSS3</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="barre-fond">
+                        <div class="barre-remplie" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="competence">
+                    <div class="competence-entete">
+                        <span>JavaScript</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="barre-fond">
+                        <div class="barre-remplie" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="competence">
+                    <div class="competence-entete">
+                        <span>Responsive Design</span>
+                        <span>88%</span>
+                    </div>
+                    <div class="barre-fond">
+                        <div class="barre-remplie" style="width: 88%;"></div>
+                    </div>
+                </div>
+
+                <div class="competence">
+                    <div class="competence-entete">
+                        <span>Git / GitHub</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="barre-fond">
+                        <div class="barre-remplie" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="competence">
+                    <div class="competence-entete">
+                        <span>Python</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="barre-fond">
+                        <div class="barre-remplie" style="width: 65%;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projets" class="projets">
+            <h2>Projets</h2>
+            <p class="sous-titre-section">Une sélection de projets récents, du dashboard à la boutique en ligne.</p>
+
+            <div class="grille-projets">
+
+                <article class="carte-projet">
+                    <img src="images/Aminatask.png" alt="Aperçu de l'application Taskly" loading="lazy">
+                    <div class="contenu-projet">
+                        <h3>Aminatask</h3>
+                        <p class="description-courte">Landing page pour une app de gestion de tâches, CSS avancé.</p>
+                        <p class="description-longue">Landing page complète avec hero, pricing et testimonials. Variables CSS, sélecteurs combinateurs et design responsive.</p>
+                        <ul class="tags-tech">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                        </ul>
+                        <a href="#" class="lien-projet">Voir le projet →</a>
+                    </div>
+                </article>
+
+                
+
+                <article class="carte-projet">
+                    <img src="images/admin.png" alt="Aperçu d'un dashboard administrateur" loading="lazy">
+                    <div class="contenu-projet">
+                        <h3>Dashboard Admin</h3>
+                        <p class="description-courte">Tableau de bord avec sidebar, stats et mode sombre.</p>
+                        <p class="description-longue">Interface d'administration combinant Flexbox et Grid, sidebar collapsible et thème sombre complet.</p>
+                        <ul class="tags-tech">
+                            <li>CSS Grid</li>
+                            <li>Flexbox</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <a href="#" class="lien-projet">Voir le projet →</a>
+                    </div>
+                </article>
+
+                <article class="carte-projet">
+                    <img src="images/gallerie.png" alt="Aperçu d'une galerie photo" loading="lazy">
+                    <div class="contenu-projet">
+                        <h3>Galerie Photo</h3>
+                        <p class="description-courte">Galerie 3 colonnes avec lightbox 100% CSS.</p>
+                        <p class="description-longue">Galerie d'images avec mise en avant, overlay au survol et lightbox réalisée grâce à la technique CSS :target.</p>
+                        <ul class="tags-tech">
+                            <li>CSS Grid</li>
+                            <li>HTML5</li>
+                        </ul>
+                        <a href="#" class="lien-projet">Voir le projet →</a>
+                    </div>
+                </article>
+
+                
+
+                
+
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <h2>Expérience</h2>
+
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-date">2025 — Aujourd'hui</div>
+                    <div class="timeline-contenu">
+                        <h3>Développeur Web Freelance</h3>
+                        <p>Conception de sites vitrines et d'applications web pour des clients locaux (commerces, associations).</p>
+                    </div>
+                </li>
+
+                <li class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-contenu">
+                        <h3>Formation intensive Développeur Web</h3>
+                        <p>Programme complet HTML, CSS, JavaScript et Git, avec plus de 20 projets réalisés.</p>
+                    </div>
+                </li>
+
+                <li class="timeline-item">
+                    <div class="timeline-date">2022 — 2023</div>
+                    <div class="timeline-contenu">
+                        <h3>Premiers projets en autodidacte</h3>
+                        <p>Apprentissage des bases du web à travers des projets personnels et des tutoriels en ligne.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p class="sous-titre-section">Un projet en tête ? N'hésitez pas à m'écrire.</p>
+
+            <div class="contact-grille">
+                <form action="#" method="post" class="contact-formulaire">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn btn-principal">Envoyer</button>
+                </form>
+
+                <ul class="contact-liens">
+                    <li><a href="mailto:aminata.yahaya@example.com">✉️ aminata.yahaya@example.com</a></li>
+                    <li><a href="https://github.com/aminatayahaya" target="_blank">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/aminatayahaya" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/aminatayahaya" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pied-de-page">
+        <p>&copy; 2026 Aminata Yahaya. Tous droits réservés.</p>
+        <ul class="reseaux-footer">
+            <li><a href="https://github.com/aminatayahaya" target="_blank" aria-label="GitHub">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/aminatayahaya" target="_blank" aria-label="LinkedIn">LinkedIn</a></li>
+            <li><a href="https://twitter.com/aminatayahaya" target="_blank" aria-label="Twitter">Twitter</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

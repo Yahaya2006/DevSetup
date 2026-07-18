@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Responsive avec Flexbox</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    
+    <nav>
+        <div class="logo" id="logo">MonSite</div>
+
+        <ul class="menu" id="menu">
+            <li><a href="#accueil">Accueil</a></li>
+
+            
+            <li class="a-sous-menu">
+                <a href="#services">Services</a>
+                <ul class="sous-menu">
+                    <li><a href="#web">Développement Web</a></li>
+                    <li><a href="#design">Design UI/UX</a></li>
+                    <li><a href="#conseil">Conseil</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="btn-contact">Contactez-nous</a>
+
+        
+        <button class="burger" id="burger" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="menu">
+            ☰
+        </button>
+    </nav>
+
+    
+    <button class="dark-toggle" id="dark-toggle" aria-label="Activer le mode sombre">🖤</button>
+
+    <main>
+        <section id="accueil" class="section-demo">
+            <h1>Navigation responsive avec Flexbox</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis odit deserunt temporibus! Sed amet asperiores quidem impedit commodi aspernatur aperiam quis exercitationem, facilis explicabo magnam repellendus excepturi officiis officia voluptatibus?</p>
+        </section>
+
+        <section id="services" class="section-demo">
+            <h2>Services</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta assumenda eligendi minima est aliquam doloribus eum ea, error adipisci totam, rem explicabo quia amet nam sunt inventore quos perspiciatis commodi!</p>
+        </section>
+
+        <section id="contact" class="section-demo">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem eum sequi laborum explicabo tempore earum, beatae soluta ut temporibus repellendus, maxime at eaque. Id, molestiae quam atque distinctio dolor minus.</p>
+        </section>
+
+        <section class="section-demo">
+            <h2>Encore un peu de contenu</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt ducimus ipsam optio labore doloremque commodi ipsum, necessitatibus dolor molestias maiores, praesentium odit quisquam, repudiandae inventore. Quo obcaecati perspiciatis incidunt nihil?</p>
+        </section>
+    </main>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span class="logo-texte">AdminPanel</span>
+            <button id="toggle-sidebar" class="toggle-sidebar" aria-label="Reduire le menu" aria-expanded="true">
+                🍔
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li class="actif"><a href="#"><span class="icone"></span><span class="texte-lien">Tableau de bord</span></a></li>
+                <li><a href="#"><span class="texte-lien">Commandes</span></a></li>
+                <li><a href="#"><span class="texte-lien">Utilisateurs</span></a></li>
+                <li><a href="#"><span class="texte-lien">Statistiques</span></a></li>
+                <li><a href="#"><span class="texte-lien">Paramètres</span></a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="main">
+
+        <header class="top-bar">
+            <h1>Tableau de bord</h1>
+            <div class="profil" id="profil">
+                <button class="btn-mode-sombre" id="dark-toggle" aria-label="activer le mode sombre">🖤</button>
+                <img src="https://placehold.co/40x40" alt="Photo de profil" class="avatar">
+                <button class="profil-nom" id="profil-buton">
+                    Alex Martin ▾
+                </button>
+                <ul class="profil-menu" id="profil-menu">
+                    <li><a href="#">Mon profil</a></li>
+                    <li><a href="#">Parametre</a></li>
+                    <li><a href="#">Deconnexion</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="stats">
+
+                <article class="carte-stat">
+                    <div>
+                        <p class="valeur-stat">4 250 000 XAF</p>
+                        <p class="label-stat">Revenu total</p>
+                    </div>
+                </article>
+
+                <article class="carte-stat">
+                    <div>
+                        <p class="valeur-stat">1 284</p>
+                        <p class="label-stat">Utilisateurs actifs</p>
+                    </div>
+                </article>
+
+                <article class="carte-stat">
+                    <div>
+                        <p class="valeur-stat">356</p>
+                        <p class="label-stat">Commandes ce mois</p>
+                    </div>
+                </article>
+
+                <article class="carte-stat">
+                    <div>
+                        <p class="valeur-stat">3,8 %</p>
+                        <p class="label-stat">Taux de conversion</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="graphiques">
+                <div class="carte-graphique"> 
+                    <h2>Ventes des 7 derniers jours</h2>
+                    <div class="graphique-barres" aria-hidden="true">
+                        <span style="height: 20%;"></span>
+                        <span style="height: 65%;"></span>
+                        <span style="height: 40%;"></span>
+                        <span style="height: 65%;"></span>
+                        <span style="height: 40%;"></span>
+                        <span style="height: 65%;"></span>
+                    </div>
+                </div>
+
+                <div class="carte-graphique">
+                    <h2>Repartition du trafic</h2>
+                    <div class="graphique-anneau"></div>
+                </div>
+            </section>
+
+            <section class="table">
+                <h2>Commandes recentes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">N° commande</th>
+                            <th scope="col">Client</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Montant</th>
+                            <th scope="col">Statut</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#CMD-1042</td>
+                            <td>Sofia Diaz</td>
+                            <td>08/07/2026</td>
+                            <td>45 000 XAF</td>
+                            <td><span class="statut statut-livre">Livrée</span></td>
+                        </tr>
+                        <tr>
+                            <td>#CMD-1041</td>
+                            <td>Marc Lefebvre</td>
+                            <td>08/07/2026</td>
+                            <td>18 500 XAF</td>
+                            <td><span class="statut statut-attente">En attente</span></td>
+                        </tr>
+                        <tr>
+                            <td>#CMD-1040</td>
+                            <td>Nadia Kouyou</td>
+                            <td>07/07/2026</td>
+                            <td>72 000 XAF</td>
+                            <td><span class="statut statut-livre">Livrée</span></td>
+                        </tr>
+                        <tr>
+                            <td>#CMD-1039</td>
+                            <td>Ben Moussavou</td>
+                            <td>07/07/2026</td>
+                            <td>12 000 XAF</td>
+                            <td><span class="statut statut-annule">Annulée</span></td>
+                        </tr>
+                        <tr>
+                            <td>#CMD-1038</td>
+                            <td>Line Batantou</td>
+                            <td>06/07/2026</td>
+                            <td>29 900 XAF</td>
+                            <td><span class="statut statut-attente">En attente</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer class="footer-dashboard">
+            <p>&copy; 2026 Admin. Tous droits reserves.</p>
+        </footer>
+
+    </div> 
+</body>
+</html>
